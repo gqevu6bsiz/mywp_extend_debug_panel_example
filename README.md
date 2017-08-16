@@ -1,2 +1,4 @@
-# mywp_extend_debug_panel_example
-My WP Extend Debug Panel Example
+# Mywp Post Type Extends (class)
+
+Please see the [document page](https://mywpcustomize.com/document/mywp-debug-panel-extends/).
+
