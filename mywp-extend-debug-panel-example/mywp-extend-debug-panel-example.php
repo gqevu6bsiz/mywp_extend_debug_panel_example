@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: My WP Debug Panel Extends Example
-Plugin URI: https://mywpcustomize.com/document/mywp-shortcode-extends-class/
+Plugin URI: https://mywpcustomize.com/document/mywp-debug-panel-extends/
 Description: My WP Debug Panel Extends Example
-Version: 1.0
+Version: 1.1
 Author: gqevu6bsiz
 Author URI: http://gqevu6bsiz.chicappa.jp/
 Requires at least: 4.6
