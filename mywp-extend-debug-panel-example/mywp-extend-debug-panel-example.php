@@ -3,16 +3,19 @@
 Plugin Name: My WP Debug Panel Extends Example
 Plugin URI: https://mywpcustomize.com/document/mywp-debug-panel-extends/
 Description: My WP Debug Panel Extends Example
-Version: 1.1
+Version: 1.0.1
 Author: gqevu6bsiz
 Author URI: http://gqevu6bsiz.chicappa.jp/
-Requires at least: 4.6
-Tested up to: 4.8
+Text Domain: mywp-extend-debug-panel-example
+Domain Path: /languages
+My WP Test working: 1.7
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
+
+
 
 add_filter( "mywp_debug_types" , "example_mywp_debug_types" );
 
@@ -24,6 +27,9 @@ function example_mywp_debug_types( $debug_types ) {
   return $debug_types;
 
 }
+
+
+
 
 add_filter( "mywp_debug_renders" , "example_mywp_debug_renders_1" );
 
@@ -46,6 +52,18 @@ function example_mywp_debug_renders_1( $debug_renders ) {
 
 }
 
+add_action( "mywp_debug_render_example_1" , "example_mywp_debug_render_example_1" );
+
+function example_mywp_debug_render_example_1() {
+
+  echo "This content is Example 1";
+
+}
+
+
+
+
+
 add_filter( "mywp_debug_renders" , "example_mywp_debug_renders_2" );
 
 function example_mywp_debug_renders_2( $debug_renders ) {
@@ -57,14 +75,6 @@ function example_mywp_debug_renders_2( $debug_renders ) {
   );
 
   return $debug_renders;
-
-}
-
-add_action( "mywp_debug_render_example_1" , "example_mywp_debug_render_example_1" );
-
-function example_mywp_debug_render_example_1() {
-
-  echo "This content is Example 1";
 
 }
 
